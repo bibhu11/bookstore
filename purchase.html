@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore - Purchase</title>
+    <script src="scripts/bookstore.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="styles/bookstore.css">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='cart.html'>Cart</a> <span id='cartCount'></span></li>
+        </ul>
+    </header>
+    <div class='title'>
+        <h1>The Bookstore - Payment</h1><br>
+    </div>
+    <section>
+        <div id="purchaseAmount">
+        </div>
+        <table id="cartTable">
+            <tr>
+                <td>Card Number</td>
+                <td><input type="text" id="cardnum" onfocusout="cardformat();"></td>
+            </tr>
+            <tr>
+                <td>Valid Till</td>
+                <td><input type="month" id='date'></td>
+            </tr>
+            <tr>
+                <td>CVV/CVC</td>
+                <td><input type="password" id="cvv" onfocusout="cvvValidate()" placeholder="3 digit CVV"></td>
+            </tr>
+        </table>
+        <button id="payNow" style="width: 50%; margin-top: 5%;">Pay Now</button>
+
+    </section>
+</body>
+
+</html>
